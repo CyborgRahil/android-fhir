@@ -81,8 +81,7 @@ class QuestionnaireItemDropDownViewHolderFactoryInstrumentedTest {
                         Coding.newBuilder()
                             .setCode(
                                 Code.newBuilder()
-                                    .setValue("test-code")
-                            )
+                                    .setValue("test-code"))
                             .setDisplay(
                                 String.newBuilder().setValue("Test Code"))
                     )
@@ -144,12 +143,10 @@ class QuestionnaireItemDropDownViewHolderFactoryInstrumentedTest {
                         Coding.newBuilder()
                             .setCode(
                                 Code.newBuilder()
-                                    .setValue("test-code")
-                            )
+                                    .setValue("test-code"))
                             .setDisplay(
-                                String.newBuilder().setValue("Test Code"))
-                    )
-            ).build()
+                                String.newBuilder().setValue("Test Code"))))
+            .build()
 
         viewHolder.bind(
             QuestionnaireItemViewItem(
@@ -177,12 +174,10 @@ class QuestionnaireItemDropDownViewHolderFactoryInstrumentedTest {
                         Coding.newBuilder()
                             .setCode(
                                 Code.newBuilder()
-                                    .setValue("test-code")
-                            )
+                                    .setValue("test-code"))
                             .setDisplay(
-                                String.newBuilder().setValue("Test Code"))
-                    )
-            ).build()
+                                String.newBuilder().setValue("Test Code"))))
+            .build()
 
         viewHolder.bind(
             QuestionnaireItemViewItem(
@@ -214,9 +209,8 @@ class QuestionnaireItemDropDownViewHolderFactoryInstrumentedTest {
                 Questionnaire.Item.AnswerOption.ValueX.newBuilder()
                     .setStringValue(
                         String.newBuilder()
-                            .setValue("test")
-                    )
-            ).build()
+                            .setValue("test")))
+            .build()
 
         assertFailsWith<IllegalArgumentException> {
             viewHolder.bind(
